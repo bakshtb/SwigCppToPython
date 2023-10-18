@@ -15,7 +15,7 @@ cd "$BUILD_DIR"
 cmake -DCMAKE_BUILD_TYPE=Release ..
 
 # Build the project with the "Release" configuration
-make
+cmake --build . --target INSTALL --config Release
 
 # Return to the project directory
 cd ..
