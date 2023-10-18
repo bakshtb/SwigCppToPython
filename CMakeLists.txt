@@ -22,21 +22,24 @@ find_package(Python3 REQUIRED COMPONENTS Interpreter Development)
 
 # Define the source files for the project
 set(src
-    Rectangle.cpp
-    Rectangle.i
-    Rectangle.h
+    src/Rectangle.cpp
 )
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-include_directories(${Python3_INCLUDE_DIRS})
+# Define the include files for the project
+set(includes
+    include/Rectangle.i
+    include/Rectangle.h
+)
+
+include_directories(${Python3_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Set the SWIG module name
-set_property(SOURCE Rectangle.i PROPERTY SWIG_MODULE_NAME Rectangle)
+set_property(SOURCE ${includes} PROPERTY SWIG_MODULE_NAME Rectangle)
 
 # Generate the SWIG wrapper.
 set(CMAKE_SWIG_OUTDIR ${CMAKE_CURRENT_SOURCE_DIR}/Release)
-set_source_files_properties(Rectangle.i PROPERTIES CPLUSPLUS ON)
-swig_add_library(Rectangle LANGUAGE python SOURCES ${src})
+set_source_files_properties(${includes} PROPERTIES CPLUSPLUS ON)
+swig_add_library(Rectangle LANGUAGE python SOURCES ${src} ${includes})
 swig_link_libraries(Rectangle Python3::Python)
 
 set_target_properties(Rectangle PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SWIG_OUTDIR})
