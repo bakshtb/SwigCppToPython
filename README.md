@@ -11,9 +11,10 @@ SwigCppToPython is a project that demonstrates how to use SWIG to generate Pytho
    ```bash
    git clone https://github.com/bakshtb/SwigCppToPython.git
 
-2. Run the build script for Windows:
-   Double-click the build.bat script in the project directory.
-The script will create a build directory, run CMake with the "Release" configuration, and build the project.
+2. Change to the project folder:
+   ```bash
+   cd SwigCppToPython
+3. 
 
 ### Linux
 1. Clone the repository to your local machine:
@@ -21,10 +22,10 @@ The script will create a build directory, run CMake with the "Release" configura
    ```bash
    git clone https://github.com/bakshtb/SwigCppToPython.git
 
-2. Run the build script for Windows:
-   Double-click the build.bat script in the project directory.
-The script will create a build directory, run CMake with the "Release" configuration, and build the project.
-
+2. Change to the project folder:
+   ```bash
+   cd SwigCppToPython
+   
 ## Testing
 After successfully building the project, you can test it:
 
