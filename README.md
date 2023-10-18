@@ -14,7 +14,9 @@ SwigCppToPython is a project that demonstrates how to use SWIG to generate Pytho
 2. Change to the project folder:
    ```bash
    cd SwigCppToPython
-3. 
+3. Run the build script:
+   ```bash
+   build_windows.bat
 
 ### Linux
 1. Clone the repository to your local machine:
@@ -25,6 +27,9 @@ SwigCppToPython is a project that demonstrates how to use SWIG to generate Pytho
 2. Change to the project folder:
    ```bash
    cd SwigCppToPython
+3. Run the build script:
+   ```bash
+   sudo bash ./build_linux.sh
    
 ## Testing
 After successfully building the project, you can test it:
