@@ -17,11 +17,12 @@ SwigCppToPython is a project that demonstrates how to use SWIG to generate Pytho
    cd SwigCppToPython
    ```
 3. Run the build script:
-   #### Windows
+   
+   **Windows**
    ```bash
    build_windows.bat
    ```
-   #### Linux
+   **Linux**
    ```bash
    sudo bash ./build_linux.sh
    ```
@@ -37,11 +38,12 @@ Run the following commands:
    cd test
    ```
 2. Run the test script:
-   #### Windows
+
+   **Windows**
    ```bash
    run_test_windows.bat
    ```
-   #### Linux
+   **Linux**
    ```bash
    sudo bash ./run_test_linux.sh
    ```
