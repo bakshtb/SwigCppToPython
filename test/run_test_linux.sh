@@ -2,8 +2,8 @@
 
 echo "----------------------------------------------------"
 echo "Copying files to the test folder..."
-cp ../Release/Rectangle.py .
-cp ../Release/_Rectangle.so .
+cp ../output/Rectangle.py .
+cp ../output/_Rectangle.pyd .
 
 echo "Running the test script..."
 echo "----------------------------------------------------"
