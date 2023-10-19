@@ -3,7 +3,7 @@
 echo "----------------------------------------------------"
 echo "Copying files to the test folder..."
 cp ../output/Rectangle.py .
-cp ../output/_Rectangle.pyd .
+cp ../output/_Rectangle.so .
 
 echo "Running the test script..."
 echo "----------------------------------------------------"
